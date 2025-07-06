@@ -1,29 +1,31 @@
 /*
-
-Vanilla Template
-
-https://templatemo.com/tm-526-vanilla
-
+Vanilla main
 */
 
 p {
-  font-size: 15px;
-  line-height: 25px;
+  font-size:18px;
+  line-height: 30px;
 }
 
 section {
   padding: 25px 0 35px;
   background: #fff;
 }
-
+html{
+    scroll-behavior: smooth !important;
+}
 body { 
-  position: relative; /* we need this for the scrollspy */ 
-  font-size: 14px;
+  position: relative;
+  font-size:40px;
 }
 
-a { color: #3CC; }
+ a{ color: #3CC;}
 
 a:hover { color: #FF0; }
+
+a {
+  text-decoration: none;
+}
 
 /*----------
   NAV
@@ -49,7 +51,7 @@ a:hover { color: #FF0; }
   background-color: #fff;
   text-align: center;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 18px;
   padding: 2px 12px;
   border-radius: 15px;
 }
@@ -116,10 +118,7 @@ a:hover { color: #FF0; }
   display: block;
 }
 
-.fadeInRight {
-  -webkit-animation-name: fadeInRight;
-          animation-name: fadeInRight;
-}
+
 
 
 .primary-button a {
@@ -128,7 +127,7 @@ a:hover { color: #FF0; }
   padding: 15px 24px;
   border-radius: 3px;
   text-transform: uppercase;
-  font-size: 11px;
+  font-size: 18px;
   color: #fff;
   font-weight: 700;
   text-decoration: none;
@@ -137,35 +136,35 @@ a:hover { color: #FF0; }
 
 /* slide2 */
 
-.parallax-content {
+.body-image  {
   width: 100%;
   min-height: 100vh;
   background-size: cover;
 }
 
 
-.baner-content {
+.image-cover {
   padding-top: 30vh;
   text-align: center;
- background-image:url(/prj-jahad/assets/image/first-section-body.jpg);
+ background-image:url(../image/first-section-body.jpg);
 }
 
-.baner-content h1 {
+.image-cover h1 {
   margin-top: 0px;
-  font-size: 128px;
+  font-size: 231px;
   color: #fff;
   font-weight: 900;
   text-transform: uppercase;
   margin-bottom: 0px;
 }
 
-.baner-content em {
+.image-cover em {
   color: #ff7d27;
   font-weight: 600;
   font-style: normal;
 }
 
-.baner-content span {
+.image-cover span {
   display: inline-block;
   margin-top: -20px;
   font-weight: 300;
@@ -173,7 +172,7 @@ a:hover { color: #FF0; }
   color: #fff;
 }
 
-.baner-content .primary-button {
+.iamge-cover .primary-button {
   margin-top: 15px;
 }
 
@@ -184,7 +183,7 @@ a:hover { color: #FF0; }
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 15vh;
-  background-image: url(/prj-jahad/assets/image/images-body2.jpg);
+  background-image: url(../image/images-body2.jpg);
   min-height: 100vh;
   background-size: cover;
   background-position: center center;
@@ -195,9 +194,12 @@ a:hover { color: #FF0; }
   font-weight: 500;
   color: #fff;
 }
+.About{
+  font-size: 20px;
+}
 
 h4, .h4 {
-  font-size: 18px;
+  font-size:23px;
 }
 
 .service-content .left-text .line-dec {
@@ -232,7 +234,7 @@ h4, .h4 {
   padding: 25px 30px;
   text-align: center;
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 63px;
 }
 
 .service-content .service-item .line-dec {
@@ -247,7 +249,7 @@ h4, .h4 {
 
 .Store-content {
   padding-top: 20vh;
-  background-image: url(/prj-jahad/assets/image/body-3.jpg);
+  background-image: url(../image/body-3.jpg);
 }
 
 .Store-content .item img {
@@ -282,7 +284,7 @@ h4, .h4 {
 
 
     .carousel-container {
-      width: 1260px; /* چون ۳ آیتم با عرض ۳۰۰px می‌خواهیم */
+      width: 1260px; 
       overflow: hidden;
       margin: 50px auto;
     }
@@ -299,6 +301,7 @@ h4, .h4 {
       text-align: center;
       flex-shrink: 0;
     }
+   
 
     .carousel-item2 img {
       width: 100%;
@@ -322,7 +325,7 @@ h4, .h4 {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 8vh;
-  background-image: url(/prj-jahad/assets/image/body-4.jpg);
+  background-image: url(../image/body-4.jpg);
   min-height: 100vh;
   background-size: cover;
   background-position: center center;
@@ -355,7 +358,7 @@ section {
   text-decoration:none;
   text-transform:uppercase;
   color:#fff;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
   padding:10px 15px;
   border:4px solid #fff;
@@ -379,11 +382,69 @@ section {
 .All-tab div img{
   width: 100%;
 }
-.clearfix:after {
-  content:"";
-  display:table;
-  clear:both;
+/* --------------------------------------------------------------------- */
+
+
+.story-tabs .nav-tabs {
+  justify-content: center;
+  margin-top: 40px;
+    border: none;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
 }
+
+.story-tabs .nav-link {
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7); 
+    transition: all 0.3s ease;
+}
+
+.story-tabs .nav-link:hover {
+     background: rgba(255, 255, 255, 0.1);
+     color: white; 
+}
+.story-tabs .nav-link{
+    border: 1px solid transparent !important; 
+
+}
+.story-tabs .nav-link.active {
+    background: transparent !important;
+    border: 1px solid #f1a043 !important; 
+
+    color: #f1a043 !important;
+}
+
+.story-tabs .tab-content {
+    background: #00000080;
+    border-radius: 0.5rem;
+}
+.tab-pane p{color: white;padding: 40px;}
+.tab-pane img{width:100%;}
+
+/* Animation */
+.tab-pane.fade {
+    transition: all 0.2s ease-out;
+}
+
+.tab-pane.fade.show {
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 /* slide 6 */
 
@@ -391,7 +452,7 @@ section {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 16vh;
-  background-image: url(/prj-jahad/assets/image/body-5.jpg);
+  background-image: url(../image/body-5.jpg);
 }
 
 .contact-form {
@@ -403,7 +464,7 @@ section {
 #contact input {
   border-radius: 3px;
   padding-left: 15px;
-  font-size: 13px;
+  font-size: 18px;
   color: #232323;
   background-color: rgba(250, 250, 250, 1);
   outline: none;
@@ -419,7 +480,7 @@ section {
   border-radius: 3px;
   padding-left: 15px;
   padding-top: 10px;
-  font-size: 13px;
+  font-size: 18px;
   color: #232323;
   background-color: rgba(250, 250, 250, 1);
   outline: none;
@@ -438,7 +499,7 @@ section {
   width: 100%;
   border-radius: 3px;
   text-transform: uppercase;
-  font-size: 11px;
+  font-size: 18px;
   color: #fff;
   font-weight: 700;
   text-decoration: none;
@@ -449,7 +510,12 @@ section {
   margin-bottom: 30px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 30px 20px;
+  padding: 36px 20px;
+}
+.share-section{
+  margin-top: 40px;
+  
+
 }
 
 
@@ -511,22 +577,20 @@ footer em {
 
 @media (max-width: 767px){
   
-  .baner-content {
+  .image-cover {
     padding-top: 30vh;
   }
 
-  .baner-content h1 {
+  .image-cover h1 {
     font-size: 64px;
   }
 
-  /* .baner-content em {
-  } */
-
-  .baner-content span {
+  
+  .image-cover span {
     font-size: 24px;
   }
 
-  .baner-content .primary-button {
+  .image-cover .primary-button {
     margin-top: 15px;
   }
 
